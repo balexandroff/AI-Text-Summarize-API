@@ -6,7 +6,7 @@ This project provides a FastAPI-based Text Summarization API using the facebook/
 
 1️⃣ **Clone the Repository**
 
-git clone [https://github.com/balexandroff/AI-Text-Summarize-API]https://github.com/balexandroff/AI-Text-Summarize-API.git
+git clone [https://github.com/balexandroff/AI-Text-Summarize-API]
 cd AI-Text-Summarize-API
 
 2️⃣ **Run Locally (Without Docker)**

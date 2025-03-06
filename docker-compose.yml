@@ -12,4 +12,7 @@ services:
       - .:/app  # Mount the current directory to /app in the container (for development)
     environment:
       - PYTHONUNBUFFERED=1  # Ensure Python output is sent straight to the terminal
+    dns:
+      - 8.8.8.8  # Use Google's public DNS
+      - 8.8.4.4  # Secondary DNS
     restart: unless-stopped  # Automatically restart the container unless it is explicitly stopped

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  ai-summarizer:
+    build:
+      context: .  # Build the Docker image using the Dockerfile in the current directory
+      dockerfile: Dockerfile
+    container_name: ai-summarizer-container  # Optional: Name the container
+    ports:
+      - "8000:8000"  # Map port 8000 on the host to port 8000 in the container
+    volumes:
+      - .:/app  # Mount the current directory to /app in the container (for development)
+    environment:
+      - PYTHONUNBUFFERED=1  # Ensure Python output is sent straight to the terminal
+    restart: unless-stopped  # Automatically restart the container unless it is explicitly stopped
